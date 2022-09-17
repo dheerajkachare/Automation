@@ -82,7 +82,7 @@ public class Orange {
 		Thread.sleep(2000);
 		driver.findElement(By.id("menu_directory_viewDirectory")).click();
 		Thread.sleep(2000);
-		options= driver.findElement(By.id("searchDirectory_job_title"));
+		
 	
 	
 		test.pass("successfullylogin");

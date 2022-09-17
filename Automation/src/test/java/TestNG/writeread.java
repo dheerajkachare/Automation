@@ -23,8 +23,7 @@ public class writeread {
 		properties.store(outputstream, "read the data and add data from file successfully");
 
 		
-		
-		
+
 
 	}
 

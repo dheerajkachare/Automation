@@ -3,19 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNG.dragdrop">
+      <class name="TestNG.crossbrowser">
         <methods>
-          <include name="closebrowser"/>
           <include name="openbrowser"/>
-          <include name="dbconnectionclose"/>
-          <include name="getcookies"/>
-          <include name="AAA"/>
           <include name="geturl"/>
+          <include name="getscreenshot"/>
           <include name="maximize"/>
           <include name="deletecookies"/>
-          <include name="screenshot"/>
+          <include name="BCA"/>
+          <include name="closebrowser"/>
+          <include name="getcookie"/>
+          <include name="dbconnectionclose"/>
         </methods>
-      </class> <!-- TestNG.dragdrop -->
+      </class> <!-- TestNG.crossbrowser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

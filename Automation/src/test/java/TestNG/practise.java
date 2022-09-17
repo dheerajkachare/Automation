@@ -3,6 +3,8 @@ package TestNG;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.devtools.v100.browser.Browser;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -11,6 +13,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class practise 
@@ -18,13 +21,17 @@ public class practise
 	WebDriver driver;
 	
 	@BeforeSuite
+
 	public void openbrowser()
-	{
+{
+		
 		System.out.println("openbrowser");
-	
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\Dheeraj\\Downloads\\chromedriver_win32 (2)\\chromedriver.exe");
+	    System.setProperty("webdriver.chrome.driver","C:\\Users\\Dheeraj\\Downloads\\chromedriver_win32 (6)\\chromedriver.exe");
 		driver=new ChromeDriver();
-	}
+		
+
+}		
+	
 	@BeforeTest
 	public void geturl()
 	{

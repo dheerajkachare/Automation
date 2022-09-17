@@ -30,24 +30,21 @@ import org.testng.annotations.Test;
 public class crossbrowsery
 {
 	  WebDriver driver;
+	  
 	  @BeforeSuite
 	  @Parameters("browser")
-	  public void openbrowser(String browser)
+	  public void openbrowser()
 	  {
-		    if(browser.equalsIgnoreCase("chrome"))
-		    {
-		    System.setProperty("webdriver.chrome.driver","C:\\Users\\Dheeraj\\Downloads\\chromedriver_win32 (2)\\chromedriver.exe");
+		    
+		    System.setProperty("webdriver.chrome.driver","C:\\\\Users\\\\Dheeraj\\\\Downloads\\\\chromedriver_win32 (5)\\\\chromedriver.exe");
 		    driver=new ChromeDriver();
 		    System.out.println("chrome"); 
-		    }
-		     
-		    else if(browser.equalsIgnoreCase("gecko"))
-		    {
+		    
 		    System.setProperty("webdriver.gecko.driver","C:\\Users\\Dheeraj\\Downloads\\geckodriver-v0.31.0-win64\\geckodriver.exe");
 		    driver=new FirefoxDriver();
 		    System.out.println("gecko");
 		    }
-		 }
+		 
 		 
 	  @BeforeTest
 	  public void geturl()

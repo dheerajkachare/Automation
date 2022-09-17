@@ -13,7 +13,7 @@ public class dragdrop {
 	
 	public static void main(String[] args) throws InterruptedException 
 	{
-		System.setProperty("webdriver.chrome.driver", "C:\\\\Users\\\\Dheeraj\\\\Downloads\\\\chromedriver_win32 (2)\\\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Dheeraj\\Downloads\\chromedriver_win32 (5)\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.globalsqa.com/demo-site/draganddrop/");
 		driver.manage().window().maximize();
@@ -31,6 +31,9 @@ public class dragdrop {
 		act.dragAndDrop(drag, drop).build().perform();
 		Basic.wait.timer();
 		driver.switchTo().defaultContent();
+		
+		driver.close();
+		
 		
 		
 		

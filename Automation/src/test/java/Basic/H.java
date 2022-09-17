@@ -10,9 +10,9 @@ public class H {
 
 	public static void main(String[] args) throws InterruptedException 
 	{
-		System.setProperty("webdriver.chrome.driver", "C:\\\\Users\\\\Dheeraj\\\\Downloads\\\\chromedriver_win32 (2)\\\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Dheeraj\\Downloads\\chromedriver_win32 (5)\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
-		driver.get("https://opensource-demo.orangehrmlive.com/index.php/auth/validateCredentials");
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		driver.manage().window().maximize();
 		Thread.sleep(1000);
 		driver.findElement(By.id("txtUsername")).sendKeys("Admin");

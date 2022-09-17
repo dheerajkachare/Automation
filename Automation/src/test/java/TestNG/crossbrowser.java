@@ -25,11 +25,17 @@ public class crossbrowser {
 	public void openbrowser()
 	{
 		
+	
 			System.out.println("openbrowser");
 			System.setProperty("webdriver.gecko.driver","C:\\Users\\Dheeraj\\Downloads\\geckodriver-v0.31.0-win64\\geckodriver.exe");
 			driver=new FirefoxDriver();
+			
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Dheeraj\\Downloads\\chromedriver_win32 (5)\\chromedriver.exe");
+			WebDriver driver=new ChromeDriver();
 		
 	}
+		
+		
 	@BeforeTest
 	public void geturl()
 	{

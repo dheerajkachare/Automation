@@ -29,15 +29,13 @@ public class dragdrop {
 	ExtentReports Extent;
 	ExtentTest test;
 	
-	@SuppressWarnings("deprecation")
 	@BeforeSuite
 	public void openbrowser()
 	{
 		System.setProperty("webdriver.chrome.driver", "C:\\\\Users\\\\Dheeraj\\\\Downloads\\\\chromedriver_win32 (4)\\\\chromedriver.exe");
 		driver=new ChromeDriver();
 	    System.out.println("chrome");
-	    driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	    
 	}
 	
 	@BeforeTest
